@@ -1,0 +1,10 @@
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\bin\Debug\loginApp.exe.config
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\bin\Debug\loginApp.exe
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\bin\Debug\loginApp.pdb
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.csproj.AssemblyReference.cache
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.Form1.resources
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.Properties.Resources.resources
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.csproj.GenerateResource.cache
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.csproj.CoreCompileInputs.cache
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.exe
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.pdb

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\Form1.cs",
+              "RelativeDocumentMoniker": "loginApp\\Form1.cs",
+              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\Form1.cs",
+              "RelativeToolTip": "loginApp\\Form1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T13:46:46.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\Form1.cs",
+              "RelativeDocumentMoniker": "loginApp\\Form1.cs",
+              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\Form1.cs [Design]",
+              "RelativeToolTip": "loginApp\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T13:36:22.505Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
