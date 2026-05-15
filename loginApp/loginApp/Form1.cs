@@ -28,6 +28,9 @@ namespace loginApp
             if (username == email && password == mssv)
             {
                 MessageBox.Show("Đăng nhập thành công!");
+                Form2 main = new Form2();
+                main.Show();
+                this.Hide();
             }
             else
             {
