@@ -58,13 +58,43 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFormDemocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFormDemocs.Designer.cs">
+      <DependentUpon>LoginFormDemocs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uc_Class.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_Class.Designer.cs">
+      <DependentUpon>uc_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucStudent.Designer.cs">
+      <DependentUpon>ucStudent.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFormDemocs.resx">
+      <DependentUpon>LoginFormDemocs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +105,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="uc_Class.resx">
+      <DependentUpon>uc_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucStudent.resx">
+      <DependentUpon>ucStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
