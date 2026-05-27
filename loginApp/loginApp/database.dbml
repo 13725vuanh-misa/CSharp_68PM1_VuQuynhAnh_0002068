@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="quanlilophoc" Class="databaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=quanlilophoc;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="loginApp.Properties.Settings" SettingsPropertyName="quanlilophocConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.sinhvien" Member="sinhviens">
+    <Type Name="sinhvien">
+      <Column Name="studentID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="studentName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="gender" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="bthDay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="classID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="studentCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="lophoc_sinhvien" Member="lophoc" ThisKey="classID" OtherKey="classID" Type="lophoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.lophoc" Member="lophocs">
+    <Type Name="lophoc">
+      <Column Name="classID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="className" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="createAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="classCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="lophoc_sinhvien" Member="sinhviens" ThisKey="classID" OtherKey="classID" Type="sinhvien" />
+    </Type>
+  </Table>
+</Database>

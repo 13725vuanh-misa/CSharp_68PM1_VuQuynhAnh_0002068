@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\loginformdemocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\loginformdemocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\loginformdemocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\loginformdemocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\database.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginapp\\uc_class.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\uc_class.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\ucstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\ucstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,64 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginFormDemocs.cs",
-              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\LoginFormDemocs.cs",
-              "RelativeDocumentMoniker": "loginApp\\LoginFormDemocs.cs",
-              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\LoginFormDemocs.cs",
-              "RelativeToolTip": "loginApp\\LoginFormDemocs.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAswCMAAAAAAAAAAAAAAA==",
+              "Title": "ucStudent.cs",
+              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.cs",
+              "RelativeDocumentMoniker": "loginApp\\ucStudent.cs",
+              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.cs*",
+              "RelativeToolTip": "loginApp\\ucStudent.cs*",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwEIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T03:46:27.332Z",
+              "WhenOpened": "2026-05-27T03:18:17.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginFormDemocs.cs [Design]",
-              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\LoginFormDemocs.cs",
-              "RelativeDocumentMoniker": "loginApp\\LoginFormDemocs.cs",
-              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\LoginFormDemocs.cs [Design]",
-              "RelativeToolTip": "loginApp\\LoginFormDemocs.cs [Design]",
+              "Title": "ucStudent.cs [Design]",
+              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.cs",
+              "RelativeDocumentMoniker": "loginApp\\ucStudent.cs",
+              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.cs [Design]*",
+              "RelativeToolTip": "loginApp\\ucStudent.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T03:46:18.357Z",
+              "WhenOpened": "2026-05-27T03:18:07.625Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "mainForm.cs",
-              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\mainForm.cs",
-              "RelativeDocumentMoniker": "loginApp\\mainForm.cs",
-              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\mainForm.cs",
-              "RelativeToolTip": "loginApp\\mainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAYAAAAAAAAAA==",
+              "Title": "database.designer.cs",
+              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\database.designer.cs",
+              "RelativeDocumentMoniker": "loginApp\\database.designer.cs",
+              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\database.designer.cs",
+              "RelativeToolTip": "loginApp\\database.designer.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T02:54:31.709Z",
+              "WhenOpened": "2026-05-27T16:28:01.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "mainForm.cs [Design]",
-              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\mainForm.cs",
-              "RelativeDocumentMoniker": "loginApp\\mainForm.cs",
-              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\mainForm.cs [Design]",
-              "RelativeToolTip": "loginApp\\mainForm.cs [Design]",
+              "Title": "ucStudent.Designer.cs",
+              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.Designer.cs",
+              "RelativeDocumentMoniker": "loginApp\\ucStudent.Designer.cs",
+              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.Designer.cs",
+              "RelativeToolTip": "loginApp\\ucStudent.Designer.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAADwv34BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T02:54:06.092Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "uc_Class.Designer.cs",
-              "DocumentMoniker": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\uc_Class.Designer.cs",
-              "RelativeDocumentMoniker": "loginApp\\uc_Class.Designer.cs",
-              "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\uc_Class.Designer.cs",
-              "RelativeToolTip": "loginApp\\uc_Class.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-20T03:18:32.092Z",
+              "WhenOpened": "2026-05-27T15:38:08.54Z",
               "EditorCaption": ""
             }
           ]

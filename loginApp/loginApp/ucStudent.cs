@@ -10,11 +10,75 @@ using System.Windows.Forms;
 
 namespace loginApp
 {
+
     public partial class ucStudent : UserControl
     {
+        databaseDataContext db = new databaseDataContext();
         public ucStudent()
         {
             InitializeComponent();
+        }
+
+        void loadData()
+        {
+            dgvStdView.AutoGenerateColumns = false;
+            List<sinhvien> dbSV = db.sinhviens.ToList();
+            StdID.DataPropertyName = "studentCode";
+            Column1.DataPropertyName = "studentName";
+            Column2.DataPropertyName = "gender";
+            Column3.DataPropertyName = "bthDay";
+            Column4.DataPropertyName = "classID";
+            dgvStdView.DataSource = dbSV;
+
+            cbClass.DataSource = db.lophocs.ToList();
+            cbClass.DisplayMember = "className";
+            cbClass.ValueMember = "classID";
+        }
+        private void ucStudent_Load(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
+        private void btnAddStd_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtStdId.Text) || string.IsNullOrEmpty(txtName.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin sinh viên!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            sinhvien sv = new sinhvien();
+            sv.studentCode = txtStdId.Text;
+            sv.studentName = txtName.Text;
+            sv.gender = cbGender.SelectedItem.ToString() == "Nam" ? false : true;
+            sv.bthDay = txtStdDate.Value;
+            sv.classID = int.Parse(cbClass.SelectedValue.ToString());
+            db.sinhviens.InsertOnSubmit(sv);
+            db.SubmitChanges();
+            loadData();
+        }
+
+        private void dgvStdView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (dgvStdView.Columns[e.ColumnIndex].Name == "Column2" && e.Value != null)
+            {
+                if (e.Value != null)
+                {
+                    bool genderValue = (bool)e.Value;
+                    e.Value = genderValue ? "Nữ" : "Nam";
+                    e.FormattingApplied = true;
+                }
+            }
+
+            if (dgvStdView.Columns[e.ColumnIndex].Name == "Column4" && e.Value != null)
+            {
+                int classID = (int)e.Value;
+                var classInfo = db.lophocs.FirstOrDefault(c => c.classID == classID);
+                if (classInfo != null)
+                {
+                    e.Value = classInfo.className;
+                    e.FormattingApplied = true;
+                }
+            }
         }
     }
 }
