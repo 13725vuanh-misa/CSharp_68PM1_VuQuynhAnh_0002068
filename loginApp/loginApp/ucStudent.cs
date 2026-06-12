@@ -80,5 +80,21 @@ namespace loginApp
                 }
             }
         }
+
+        private void dgvStdView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvStdView.Rows[e.RowIndex];
+                txtStdId.Text = row.Cells["StdID"].Value.ToString();
+                txtStdId.Enabled = false;
+                txtName.Text = row.Cells["Column1"].Value.ToString();
+                cbGender.SelectedItem = row.Cells["Column2"].Value.ToString() == "Nam" ? "Nam" : "Nữ";
+                txtStdDate.Value = Convert.ToDateTime(row.Cells["Column3"].Value);
+                cbClass.SelectedValue = row.Cells["Column4"].Value;
+            }
+        }
+
+        
     }
 }

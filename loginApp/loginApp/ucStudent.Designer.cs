@@ -102,6 +102,7 @@
             this.btnDeleteStd.TabIndex = 5;
             this.btnDeleteStd.Text = "Xóa";
             this.btnDeleteStd.UseVisualStyleBackColor = false;
+
             // 
             // btnEditStd
             // 
@@ -114,6 +115,7 @@
             this.btnEditStd.TabIndex = 4;
             this.btnEditStd.Text = "Sửa";
             this.btnEditStd.UseVisualStyleBackColor = false;
+
             // 
             // btnAddStd
             // 
@@ -267,6 +269,7 @@
             this.dgvStdView.RowTemplate.Height = 24;
             this.dgvStdView.Size = new System.Drawing.Size(714, 379);
             this.dgvStdView.TabIndex = 4;
+            this.dgvStdView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStdView_CellClick);
             this.dgvStdView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvStdView_CellFormatting);
             // 
             // StdID

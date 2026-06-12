@@ -42,6 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvStdView = new System.Windows.Forms.DataGridView();
+            this.StdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnFrist = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -50,9 +53,7 @@
             this.btnFind = new System.Windows.Forms.Button();
             this.txtFind = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.StdID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnViewStd = new System.Windows.Forms.Button();
             this.InputStudentForm.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -62,6 +63,7 @@
             // InputStudentForm
             // 
             this.InputStudentForm.AccessibleDescription = "";
+            this.InputStudentForm.Controls.Add(this.btnViewStd);
             this.InputStudentForm.Controls.Add(this.btnReload);
             this.InputStudentForm.Controls.Add(this.btnDeleteStd);
             this.InputStudentForm.Controls.Add(this.btnEditStd);
@@ -78,7 +80,7 @@
             this.btnReload.BackColor = System.Drawing.Color.Gray;
             this.btnReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnReload.Location = new System.Drawing.Point(179, 507);
+            this.btnReload.Location = new System.Drawing.Point(179, 466);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(170, 47);
             this.btnReload.TabIndex = 6;
@@ -90,7 +92,7 @@
             this.btnDeleteStd.BackColor = System.Drawing.Color.Tomato;
             this.btnDeleteStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteStd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDeleteStd.Location = new System.Drawing.Point(6, 507);
+            this.btnDeleteStd.Location = new System.Drawing.Point(6, 466);
             this.btnDeleteStd.Name = "btnDeleteStd";
             this.btnDeleteStd.Size = new System.Drawing.Size(170, 47);
             this.btnDeleteStd.TabIndex = 5;
@@ -102,7 +104,7 @@
             this.btnEditStd.BackColor = System.Drawing.Color.Green;
             this.btnEditStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditStd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEditStd.Location = new System.Drawing.Point(179, 454);
+            this.btnEditStd.Location = new System.Drawing.Point(179, 413);
             this.btnEditStd.Name = "btnEditStd";
             this.btnEditStd.Size = new System.Drawing.Size(170, 47);
             this.btnEditStd.TabIndex = 4;
@@ -114,7 +116,7 @@
             this.btnAddStd.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnAddStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddStd.Location = new System.Drawing.Point(6, 454);
+            this.btnAddStd.Location = new System.Drawing.Point(6, 413);
             this.btnAddStd.Name = "btnAddStd";
             this.btnAddStd.Size = new System.Drawing.Size(170, 47);
             this.btnAddStd.TabIndex = 3;
@@ -218,6 +220,28 @@
             this.dgvStdView.TabIndex = 4;
             this.dgvStdView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStdView_CellContentClick);
             // 
+            // StdID
+            // 
+            this.StdID.HeaderText = "Mã lớp";
+            this.StdID.MinimumWidth = 6;
+            this.StdID.Name = "StdID";
+            this.StdID.ReadOnly = true;
+            this.StdID.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tên lớp";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Ngày tạo";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
             // btnFrist
             // 
             this.btnFrist.Location = new System.Drawing.Point(206, 544);
@@ -291,27 +315,18 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Tìm kiếm (Mã lớp/Tên lớp)";
             // 
-            // StdID
+            // btnViewStd
             // 
-            this.StdID.HeaderText = "Mã lớp";
-            this.StdID.MinimumWidth = 6;
-            this.StdID.Name = "StdID";
-            this.StdID.ReadOnly = true;
-            this.StdID.Width = 125;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Tên lớp";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Ngày tạo";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.btnViewStd.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnViewStd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewStd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnViewStd.Location = new System.Drawing.Point(12, 529);
+            this.btnViewStd.Name = "btnViewStd";
+            this.btnViewStd.Size = new System.Drawing.Size(337, 47);
+            this.btnViewStd.TabIndex = 7;
+            this.btnViewStd.Text = "Xem danh sách sinh viên";
+            this.btnViewStd.UseVisualStyleBackColor = false;
+            this.btnViewStd.Click += new System.EventHandler(this.button2_Click);
             // 
             // uc_Class
             // 
@@ -357,5 +372,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StdID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button btnViewStd;
     }
 }
