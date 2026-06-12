@@ -95,6 +95,31 @@ namespace loginApp
             }
         }
 
-        
+        private void btnEditStd_Click(object sender, EventArgs e)
+        {
+            string id = txtStdId.Text;
+            if (id != null)
+            {
+                sinhvien sv = db.sinhviens.SingleOrDefault(s => s.studentCode == id);
+                if (sv != null)
+                {
+                    sv.studentName = txtName.Text;
+                    sv.gender = cbGender.SelectedItem.ToString() == "Nam" ? false : true;
+                    sv.bthDay = txtStdDate.Value;
+                    sv.classID = int.Parse(cbClass.SelectedValue.ToString());
+                    db.SubmitChanges();
+                    loadData();
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy sinh viên cần sửa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn sinh viên cần sửa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

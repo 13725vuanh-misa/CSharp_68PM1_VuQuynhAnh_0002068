@@ -102,7 +102,6 @@
             this.btnDeleteStd.TabIndex = 5;
             this.btnDeleteStd.Text = "Xóa";
             this.btnDeleteStd.UseVisualStyleBackColor = false;
-
             // 
             // btnEditStd
             // 
@@ -115,7 +114,7 @@
             this.btnEditStd.TabIndex = 4;
             this.btnEditStd.Text = "Sửa";
             this.btnEditStd.UseVisualStyleBackColor = false;
-
+            this.btnEditStd.Click += new System.EventHandler(this.btnEditStd_Click);
             // 
             // btnAddStd
             // 
