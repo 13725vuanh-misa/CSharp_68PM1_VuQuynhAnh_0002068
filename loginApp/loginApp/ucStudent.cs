@@ -121,5 +121,17 @@ namespace loginApp
             }
 
         }
+
+        private void btnDeleteStd_Click(object sender, EventArgs e)
+        {
+            string id = txtStdId.Text;
+            sinhvien sv = db.sinhviens.SingleOrDefault(s => s.studentCode == id);
+            if (sv != null)
+            {
+                db.sinhviens.DeleteOnSubmit(sv);
+                db.SubmitChanges();
+                loadData();
+            };
+        }
     }
 }

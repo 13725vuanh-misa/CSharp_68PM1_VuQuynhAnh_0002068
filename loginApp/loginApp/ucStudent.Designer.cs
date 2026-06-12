@@ -102,6 +102,7 @@
             this.btnDeleteStd.TabIndex = 5;
             this.btnDeleteStd.Text = "Xóa";
             this.btnDeleteStd.UseVisualStyleBackColor = false;
+            this.btnDeleteStd.Click += new System.EventHandler(this.btnDeleteStd_Click);
             // 
             // btnEditStd
             // 
