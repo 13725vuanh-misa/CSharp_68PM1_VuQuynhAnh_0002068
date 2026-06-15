@@ -32,7 +32,7 @@ namespace loginApp
             }
             else
             {
-                data = db.lophocs.Where(x => x.className.Contains(txtFind.Text.Trim()) || x.classID.ToString().Contains(txtFind.Text.Trim()));
+                data = db.lophocs.Where(x => x.className.Contains(txtFind.Text.Trim()) || x.classCode.ToString().Contains(txtFind.Text.Trim()));
             }
             return data;
         }
@@ -46,7 +46,7 @@ namespace loginApp
         {
             dgvStdView.AutoGenerateColumns = false;
             var data = GetClassPage();
-            ClassID.DataPropertyName = "classID";
+            ClassID.DataPropertyName = "classCode";
             ClassName.DataPropertyName = "className";
             CreateAt.DataPropertyName = "createAt";
             dgvStdView.DataSource = data;
@@ -65,14 +65,14 @@ namespace loginApp
                 return;
             }
 
-            if (db.lophocs.Any(x => x.classID.ToString() == txtClassId.Text))
+            if (db.lophocs.Any(x => x.classCode.ToString() == txtClassId.Text))
             {
                 MessageBox.Show("Lớp học đã tồn tại!");
             }
             else
             {
                 lophoc newClass = new lophoc();
-                newClass.classID = int.Parse(txtClassId.Text);
+                newClass.classCode = txtClassId.Text;
                 newClass.className = txtClassName.Text;
                 newClass.createAt = txtClassDate.Value;
                 db.lophocs.InsertOnSubmit(newClass);
@@ -98,7 +98,7 @@ namespace loginApp
             string classId = txtClassId.Text;
             if (!string.IsNullOrEmpty(classId))
             {
-                lophoc existingClass = db.lophocs.FirstOrDefault(x => x.classID.ToString() == classId);
+                lophoc existingClass = db.lophocs.FirstOrDefault(x => x.classCode.ToString() == classId);
                 if (existingClass != null)
                 {
                     existingClass.className = txtClassName.Text;
@@ -122,12 +122,19 @@ namespace loginApp
             string classId = txtClassId.Text;
             if (!string.IsNullOrEmpty(classId))
             {
-                lophoc existingClass = db.lophocs.FirstOrDefault(x => x.classID.ToString() == classId);
+                lophoc existingClass = db.lophocs.FirstOrDefault(x => x.classCode.ToString() == classId);
                 if (existingClass != null)
                 {
-                    db.lophocs.DeleteOnSubmit(existingClass);
-                    db.SubmitChanges();
-                    loadData();
+                    if((db.sinhviens.Any(x => x.classID == existingClass.classID)))
+                    {
+                        MessageBox.Show("Không thể xóa lớp học vì có sinh viên đang học lớp này!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    } else
+                    {
+                        db.lophocs.DeleteOnSubmit(existingClass);
+                        db.SubmitChanges();
+                        loadData();
+                    }    
+
                 }
             }
         }
@@ -149,6 +156,7 @@ namespace loginApp
             if (page > (int)Math.Ceiling((double)GetClass().Count() / pageSize))
             {
                 MessageBox.Show("Bạn đã ở trang cuối!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                page = page - 1;
             }
             else
             {
