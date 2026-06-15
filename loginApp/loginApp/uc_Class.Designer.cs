@@ -35,7 +35,7 @@
             this.btnEditClass = new System.Windows.Forms.Button();
             this.btnAddClass = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtStdDate = new System.Windows.Forms.DateTimePicker();
+            this.txtClassDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtClassId = new System.Windows.Forms.TextBox();
@@ -98,6 +98,7 @@
             this.btnReload.TabIndex = 6;
             this.btnReload.Text = "Làm mới";
             this.btnReload.UseVisualStyleBackColor = false;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnDeleteClass
             // 
@@ -110,6 +111,7 @@
             this.btnDeleteClass.TabIndex = 5;
             this.btnDeleteClass.Text = "Xóa";
             this.btnDeleteClass.UseVisualStyleBackColor = false;
+            this.btnDeleteClass.Click += new System.EventHandler(this.btnDeleteClass_Click);
             // 
             // btnEditClass
             // 
@@ -122,6 +124,7 @@
             this.btnEditClass.TabIndex = 4;
             this.btnEditClass.Text = "Sửa";
             this.btnEditClass.UseVisualStyleBackColor = false;
+            this.btnEditClass.Click += new System.EventHandler(this.btnEditClass_Click);
             // 
             // btnAddClass
             // 
@@ -134,10 +137,11 @@
             this.btnAddClass.TabIndex = 3;
             this.btnAddClass.Text = "Thêm";
             this.btnAddClass.UseVisualStyleBackColor = false;
+            this.btnAddClass.Click += new System.EventHandler(this.btnAddClass_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtStdDate);
+            this.groupBox1.Controls.Add(this.txtClassDate);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtClassId);
@@ -150,13 +154,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin Lớp";
             // 
-            // txtStdDate
+            // txtClassDate
             // 
-            this.txtStdDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtStdDate.Location = new System.Drawing.Point(9, 171);
-            this.txtStdDate.Name = "txtStdDate";
-            this.txtStdDate.Size = new System.Drawing.Size(331, 22);
-            this.txtStdDate.TabIndex = 9;
+            this.txtClassDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtClassDate.Location = new System.Drawing.Point(9, 171);
+            this.txtClassDate.Name = "txtClassDate";
+            this.txtClassDate.Size = new System.Drawing.Size(331, 22);
+            this.txtClassDate.TabIndex = 9;
             // 
             // label5
             // 
@@ -229,6 +233,7 @@
             this.dgvStdView.RowTemplate.Height = 24;
             this.dgvStdView.Size = new System.Drawing.Size(714, 379);
             this.dgvStdView.TabIndex = 4;
+            this.dgvStdView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStdView_CellClick);
             // 
             // ClassID
             // 
@@ -260,6 +265,7 @@
             this.btnFrist.TabIndex = 5;
             this.btnFrist.Text = "<<";
             this.btnFrist.UseVisualStyleBackColor = true;
+            this.btnFrist.Click += new System.EventHandler(this.btnFrist_Click);
             // 
             // btnFindClass
             // 
@@ -269,6 +275,7 @@
             this.btnFindClass.TabIndex = 5;
             this.btnFindClass.Text = ">>";
             this.btnFindClass.UseVisualStyleBackColor = true;
+            this.btnFindClass.Click += new System.EventHandler(this.btnFindClass_Click);
             // 
             // btnNext
             // 
@@ -278,6 +285,7 @@
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPre
             // 
@@ -287,6 +295,7 @@
             this.btnPre.TabIndex = 5;
             this.btnPre.Text = "<";
             this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
             // 
             // label7
             // 
@@ -308,6 +317,7 @@
             this.btnFind.TabIndex = 3;
             this.btnFind.Text = "Tìm kiếm";
             this.btnFind.UseVisualStyleBackColor = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // txtFind
             // 
@@ -333,6 +343,7 @@
             this.Controls.Add(this.InputStudentForm);
             this.Name = "uc_Class";
             this.Size = new System.Drawing.Size(1145, 654);
+            this.Load += new System.EventHandler(this.uc_Class_Load);
             this.InputStudentForm.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -355,7 +366,7 @@
         private System.Windows.Forms.Button btnReload;
         private System.Windows.Forms.Button btnDeleteClass;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker txtStdDate;
+        private System.Windows.Forms.DateTimePicker txtClassDate;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnFind;
