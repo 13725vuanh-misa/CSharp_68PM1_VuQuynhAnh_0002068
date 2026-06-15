@@ -199,5 +199,16 @@ namespace loginApp
             page = 1;
             loadData();
         }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            txtFind.Clear();
+            txtStdId.Enabled = true;
+            page = 1;
+            txtName.Clear();
+            txtStdDate.Value = DateTime.Now;
+            txtStdId.Clear();
+            loadData();
+        }
     }
 }

@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|d:\\c#_winform\\csharp_68pm1_vuquynhanh_0002068\\loginapp\\loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5271B9E3-0924-47E7-A0AE-687B1E381BFF}|loginApp\\loginApp.csproj|solutionrelative:loginapp\\ucstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "loginApp\\ucStudent.cs",
               "ToolTip": "D:\\C#_Winform\\CSharp_68PM1_VuQuynhAnh_0002068\\loginApp\\loginApp\\ucStudent.cs",
               "RelativeToolTip": "loginApp\\ucStudent.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAmwNEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T03:18:17.873Z",
               "EditorCaption": ""
@@ -59,7 +59,8 @@
               "RelativeToolTip": "loginApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-12T00:14:35.833Z"
+              "WhenOpened": "2026-06-12T00:14:35.833Z",
+              "EditorCaption": ""
             }
           ]
         }

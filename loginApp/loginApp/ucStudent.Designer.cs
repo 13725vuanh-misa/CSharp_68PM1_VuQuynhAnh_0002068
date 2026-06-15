@@ -90,6 +90,7 @@
             this.btnReload.TabIndex = 6;
             this.btnReload.Text = "Làm mới";
             this.btnReload.UseVisualStyleBackColor = false;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
             // btnDeleteStd
             // 
@@ -194,7 +195,6 @@
             // 
             // cbGender
             // 
-            this.cbGender.DisplayMember = "NAm";
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Items.AddRange(new object[] {
             "Nam",
