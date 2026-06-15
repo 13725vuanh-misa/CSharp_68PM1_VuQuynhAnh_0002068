@@ -43,6 +43,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgvStdView = new System.Windows.Forms.DataGridView();
+            this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CreateAt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnFrist = new System.Windows.Forms.Button();
             this.btnFindClass = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
@@ -51,9 +54,6 @@
             this.btnFind = new System.Windows.Forms.Button();
             this.txtFind = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.CreateAt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClassName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ClassID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InputStudentForm.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -86,6 +86,7 @@
             this.btnViewStd.TabIndex = 7;
             this.btnViewStd.Text = "Xem danh sách sinh viên";
             this.btnViewStd.UseVisualStyleBackColor = false;
+            this.btnViewStd.Click += new System.EventHandler(this.btnViewStd_Click);
             // 
             // btnReload
             // 
@@ -235,6 +236,28 @@
             this.dgvStdView.TabIndex = 4;
             this.dgvStdView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStdView_CellClick);
             // 
+            // ClassID
+            // 
+            this.ClassID.HeaderText = "Mã lớp";
+            this.ClassID.MinimumWidth = 6;
+            this.ClassID.Name = "ClassID";
+            this.ClassID.ReadOnly = true;
+            this.ClassID.Width = 125;
+            // 
+            // ClassName
+            // 
+            this.ClassName.HeaderText = "Tên lớp";
+            this.ClassName.MinimumWidth = 6;
+            this.ClassName.Name = "ClassName";
+            this.ClassName.Width = 125;
+            // 
+            // CreateAt
+            // 
+            this.CreateAt.HeaderText = "Ngày tạo";
+            this.CreateAt.MinimumWidth = 6;
+            this.CreateAt.Name = "CreateAt";
+            this.CreateAt.Width = 125;
+            // 
             // btnFrist
             // 
             this.btnFrist.Location = new System.Drawing.Point(206, 544);
@@ -312,28 +335,6 @@
             this.label6.Size = new System.Drawing.Size(164, 16);
             this.label6.TabIndex = 1;
             this.label6.Text = "Tìm kiếm (Mã lớp/Tên lớp)";
-            // 
-            // CreateAt
-            // 
-            this.CreateAt.HeaderText = "Ngày tạo";
-            this.CreateAt.MinimumWidth = 6;
-            this.CreateAt.Name = "CreateAt";
-            this.CreateAt.Width = 125;
-            // 
-            // ClassName
-            // 
-            this.ClassName.HeaderText = "Tên lớp";
-            this.ClassName.MinimumWidth = 6;
-            this.ClassName.Name = "ClassName";
-            this.ClassName.Width = 125;
-            // 
-            // ClassID
-            // 
-            this.ClassID.HeaderText = "Mã lớp";
-            this.ClassID.MinimumWidth = 6;
-            this.ClassID.Name = "ClassID";
-            this.ClassID.ReadOnly = true;
-            this.ClassID.Width = 125;
             // 
             // uc_Class
             // 

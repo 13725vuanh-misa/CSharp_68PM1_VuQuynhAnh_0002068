@@ -13,3 +13,4 @@ D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginA
 D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.LoginFormDemocs.resources
 D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.ucStudent.resources
 D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.uc_Class.resources
+D:\C#_Winform\CSharp_68PM1_VuQuynhAnh_0002068\loginApp\loginApp\obj\Debug\loginApp.frmStuListByClass.resources

@@ -199,5 +199,20 @@ namespace loginApp
             page =1;
             loadData();
         }
+
+        private void btnViewStd_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(txtClassId.Text))
+            {
+                MessageBox.Show("Vui lòng chọn lớp học để xem danh sách sinh viên!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string classId = txtClassId.Text;
+            string className = txtClassName.Text;
+            frmStuListByClass frm = new frmStuListByClass(classId, className);
+            frm.ShowDialog();
+
+        }
     }
 }
