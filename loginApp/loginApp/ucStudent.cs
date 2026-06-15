@@ -204,6 +204,7 @@ namespace loginApp
 
         private void btnFind_Click(object sender, EventArgs e)
         {
+            page = 1;
             txtStdId.Enabled = true;
             txtName.Clear();
             txtStdDate.Value = DateTime.Now;

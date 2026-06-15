@@ -140,6 +140,7 @@ namespace loginApp
             txtClassId.Enabled = true;
             page = 1;
             txtFind.Clear();
+            loadData();
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -187,6 +188,7 @@ namespace loginApp
             txtClassName.Clear();
             txtClassDate.Value = DateTime.Now;
             txtClassId.Enabled = true;
+            page =1;
             loadData();
         }
     }
