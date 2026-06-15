@@ -52,7 +52,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnFrist = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLast = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPre = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -241,7 +241,7 @@
             // 
             this.panel1.Controls.Add(this.dgvStdView);
             this.panel1.Controls.Add(this.btnFrist);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnLast);
             this.panel1.Controls.Add(this.btnNext);
             this.panel1.Controls.Add(this.btnPre);
             this.panel1.Controls.Add(this.label7);
@@ -317,15 +317,17 @@
             this.btnFrist.TabIndex = 5;
             this.btnFrist.Text = "<<";
             this.btnFrist.UseVisualStyleBackColor = true;
+            this.btnFrist.Click += new System.EventHandler(this.btnFrist_Click);
             // 
-            // button1
+            // btnLast
             // 
-            this.button1.Location = new System.Drawing.Point(550, 544);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 32);
-            this.button1.TabIndex = 5;
-            this.button1.Text = ">>";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLast.Location = new System.Drawing.Point(550, 544);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(37, 32);
+            this.btnLast.TabIndex = 5;
+            this.btnLast.Text = ">>";
+            this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
             // 
@@ -335,6 +337,7 @@
             this.btnNext.TabIndex = 5;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPre
             // 
@@ -344,6 +347,7 @@
             this.btnPre.TabIndex = 5;
             this.btnPre.Text = "<";
             this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
             // 
             // label7
             // 
@@ -365,6 +369,7 @@
             this.btnFind.TabIndex = 3;
             this.btnFind.Text = "Tìm kiếm";
             this.btnFind.UseVisualStyleBackColor = false;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // txtFind
             // 
@@ -431,7 +436,7 @@
         private System.Windows.Forms.Button btnPre;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnFrist;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLast;
         private System.Windows.Forms.Button btnNext;
     }
 }

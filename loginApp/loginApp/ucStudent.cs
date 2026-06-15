@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace loginApp
 {
-
+   
     public partial class ucStudent : UserControl
     {
         databaseDataContext db = new databaseDataContext();
@@ -18,21 +20,41 @@ namespace loginApp
         {
             InitializeComponent();
         }
+        int page = 1;
+        int pageSize = 2;
+        
+        private IQueryable<sinhvien> GetStd()
+        {
+            IQueryable<sinhvien> data = db.sinhviens;
+            if (!string.IsNullOrEmpty(txtFind.Text.Trim()))
+            {
+               data = db.sinhviens.Where(s => s.studentCode.Contains(txtFind.Text.Trim()) || s.studentName.Contains(txtFind.Text.Trim()));
+            }
+
+            return data;
+        }
+
+        private List<sinhvien> GetStdPage()
+        {
+            return GetStd().Skip((page - 1) * pageSize).Take(pageSize).ToList();
+        }
 
         void loadData()
         {
             dgvStdView.AutoGenerateColumns = false;
-            List<sinhvien> dbSV = db.sinhviens.ToList();
+            var data = GetStdPage();
             StdID.DataPropertyName = "studentCode";
             Column1.DataPropertyName = "studentName";
             Column2.DataPropertyName = "gender";
             Column3.DataPropertyName = "bthDay";
             Column4.DataPropertyName = "classID";
-            dgvStdView.DataSource = dbSV;
+            dgvStdView.DataSource = data;
 
             cbClass.DataSource = db.lophocs.ToList();
             cbClass.DisplayMember = "className";
             cbClass.ValueMember = "classID";
+
+            label7.Text = $"Trang {page} / {(int)Math.Ceiling((double)GetStd().Count() / pageSize)} | {GetStd().Count()} bản ghi";
         }
         private void ucStudent_Load(object sender, EventArgs e)
         {
@@ -132,6 +154,50 @@ namespace loginApp
                 db.SubmitChanges();
                 loadData();
             };
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            page = page + 1;
+            if (page > (int)Math.Ceiling((double)GetStd().Count() / pageSize))
+            {
+                page = (int)Math.Ceiling((double)GetStd().Count() / pageSize);
+                MessageBox.Show("Đây là trang cuối cùng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } else {
+                loadData();
+            }
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            page = (int)Math.Ceiling((double)GetStd().Count() / pageSize);
+            loadData();
+        }
+
+        private void btnPre_Click(object sender, EventArgs e)
+        {
+            page = page - 1;
+            if (page < 1)
+            {
+                page = 1;
+                MessageBox.Show("Đây là trang đầu tiên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                loadData();
+            }
+        }
+
+        private void btnFrist_Click(object sender, EventArgs e)
+        {
+            page = 1; 
+            loadData();
+        }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            page = 1;
+            loadData();
         }
     }
 }
