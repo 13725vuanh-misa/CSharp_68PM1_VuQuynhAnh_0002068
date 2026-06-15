@@ -28,7 +28,7 @@ namespace loginApp
             IQueryable<sinhvien> data = db.sinhviens;
             if (!string.IsNullOrEmpty(txtFind.Text.Trim()))
             {
-               data = db.sinhviens.Where(s => s.studentCode.Contains(txtFind.Text.Trim()) || s.studentName.Contains(txtFind.Text.Trim()));
+               data = db.sinhviens.Where(s => s.studentCode.Contains(txtFind.Text.Trim()) || s.studentName.Contains(txtFind.Text.Trim()) || s.lophoc.className.Contains(txtFind.Text.Trim()));
             }
 
             return data;
@@ -204,7 +204,10 @@ namespace loginApp
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            page = 1;
+            txtStdId.Enabled = true;
+            txtName.Clear();
+            txtStdDate.Value = DateTime.Now;
+            txtStdId.Clear();
             loadData();
         }
 

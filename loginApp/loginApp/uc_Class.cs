@@ -12,24 +12,11 @@ namespace loginApp
 {
     public partial class uc_Class : UserControl
     {
+        databaseDataContext db = new databaseDataContext();
         public uc_Class()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvStdView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
