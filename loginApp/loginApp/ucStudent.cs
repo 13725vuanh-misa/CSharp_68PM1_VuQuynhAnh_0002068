@@ -74,9 +74,17 @@ namespace loginApp
             sv.gender = cbGender.SelectedItem.ToString() == "Nam" ? false : true;
             sv.bthDay = txtStdDate.Value;
             sv.classID = int.Parse(cbClass.SelectedValue.ToString());
-            db.sinhviens.InsertOnSubmit(sv);
-            db.SubmitChanges();
-            loadData();
+            if( db.sinhviens.Any(x => x.studentCode == sv.studentCode)) 
+            { 
+                MessageBox.Show("Sinh viên đã tồn tại!");
+            }
+            else
+            {
+                db.sinhviens.InsertOnSubmit(sv);
+                db.SubmitChanges();
+                loadData();
+            }
+           
         }
 
         private void dgvStdView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
